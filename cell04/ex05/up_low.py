@@ -1,6 +1,6 @@
 """swap case of a word."""
 
-def swap_by_function(word):
+def swap_by_method(word):
     """swap case of a word."""
     return word.swapcase()
 
@@ -17,6 +17,6 @@ def swap_by_iteration(word):
 def main():
     """swap case of a word."""
     word = input("Give me a word : ")
-    print(f"Swap by built-in function : {swap_by_function(word)}")
+    print(f"Swap by string method : {swap_by_method(word)}")
     print(f"Swap by string iteration : {swap_by_iteration(word)}")
 main()
