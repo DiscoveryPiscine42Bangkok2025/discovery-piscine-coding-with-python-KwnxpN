@@ -80,7 +80,6 @@ def checkmate(board):
             return
         
         lines = board.strip().split('\n')
-        print(lines)  # Debug: print the board lines
         
         # Check if board is square and valid
         if not lines:
