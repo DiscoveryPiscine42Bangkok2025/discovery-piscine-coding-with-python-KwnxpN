@@ -76,26 +76,26 @@ def checkmate(board):
     try:
         # Handle empty or invalid input
         if not board or not board.strip():
-            print("Fail")
+            print("Error: Invalid board")
             return
         
         lines = board.strip().split('\n')
         
         # Check if board is square and valid
         if not lines:
-            print("Fail")
+            print("Error: Invalid board")
             return
             
         board_size = len(lines)
         for line in lines:
             if len(line) != board_size:
-                print("Fail")
+                print("Error: Invalid board")
                 return
         
         # Find the King
         king_pos = find_king(board)
         if not king_pos:
-            print("Fail")
+            print("Error: Invalid board")
             return
         
         king_row, king_col = king_pos
@@ -110,4 +110,4 @@ def checkmate(board):
             print("Fail")
             
     except Exception:
-        print("Fail")
+        print("Error: Invalid board")
