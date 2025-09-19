@@ -59,4 +59,13 @@ P...
     print("Test 6 (Pawn attack):")
     checkmate(board6)
 
+    board7 = """\
+....
+.K..
+....
+.R..
+"""
+    print("Test 7 (Rook attack):")
+    checkmate(board7)
+
 main()
